@@ -1,16 +1,14 @@
-Python script to convert playlists from older PlyCast versions (1.0.4.3) into the new format (Version 1.0.27.x) 
+# Python script to convert playlists from older PlyCast versions (1.0.4.3) into the new format (Version 1.0.27.x) 
 
-**Usage:
+## Usage:
 
-*Convert one playlist
-python convert_plycast.py playlist.plyt
+**Single file (new random GUIDs like PlyCast 1.0.27.3-rc exports):**
+`python convert_plycast.py old.xml` 
 
-Output: playlist_new.plyt
 
-**Convert whole folder
-python convert_plycast.py C:\Playlists
+**Keep old IDs (convert to dashed format instead of new random UUIDs):**
+`python convert_plycast.py old.xml --guid keep` 
 
-**Output: C:\Playlists_new\
 
-**Keep old IDs instead of random GUIDs
-python convert_plycast.py playlist.plyt --guid keep
+**Convert a whole folder:**
+`python convert_plycast.py "C:\playlists\old"  "C:\playlists\new"`
