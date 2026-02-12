@@ -12,3 +12,7 @@
 
 **Convert a whole folder:**
 `python convert_plycast.py "C:\playlists\old"  "C:\playlists\new"`
+
+
+
+## At the moment it can only convert comments and files from these playlists
